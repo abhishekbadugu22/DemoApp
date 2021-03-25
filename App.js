@@ -46,6 +46,7 @@ import UserContainer from './Components/UserContainer';
 
 import { PersistGate } from 'redux-persist/integration/react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import DemoContainer from './Components/DemoContainer';
 
 const Stack = createStackNavigator();
 
@@ -121,38 +122,43 @@ const App = () => {
 
 
 
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor} > 
+    // <Provider store={store}> 
+    //   {/* <PersistGate loading={null} persistor={persistor} >  */}
 
-      {/* <NavigationContainer> */}
-          <UserContainer />
+    //   {/* <NavigationContainer> */}
+    //       {/* <UserContainer /> */}
 
-          {/* <Stack.Navigator>
+          // {/* <Stack.Navigator>
 
-            <Stack.Screen name="Home" component={HomeComponent}>
+          //   <Stack.Screen name="Home" component={HomeComponent}>
             
-            </Stack.Screen>
+          //   </Stack.Screen>
 
-            <Stack.Screen name='Details' component={DetailsComponent}>
+          //   <Stack.Screen name='Details' component={DetailsComponent}>
 
-            </Stack.Screen>
+          //   </Stack.Screen>
 
-            <Stack.Screen name='Dashboard' component={DashboardComponent}>
+          //   <Stack.Screen name='Dashboard' component={DashboardComponent}>
 
-            </Stack.Screen>
+          //   </Stack.Screen>
 
-          </Stack.Navigator> */}
+          // </Stack.Navigator> */}
 
           
 
-          {/* <Drawer.Navigator >
-            <Drawer.Screen name="Home" component={MainNavigation} ></Drawer.Screen>
-          </Drawer.Navigator> */}
+    //       {/* <Drawer.Navigator >
+    //         <Drawer.Screen name="Home" component={MainNavigation} ></Drawer.Screen>
+    //       </Drawer.Navigator> */}
           
 
-      {/* </NavigationContainer> */}
-      </PersistGate>
-    </Provider>
+    //   {/* </NavigationContainer> */}
+    //   {/* </PersistGate> */}
+    // {/* </Provider> */}
+
+    // <LoginComponent />
+
+    <DemoContainer />
+
   );
 };
 

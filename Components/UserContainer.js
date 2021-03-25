@@ -12,9 +12,9 @@ function UserContainer(props) {
     //     console.log(data);
     // },[])
 
-    // const removeData = async() => {
-    //     await AsyncStorage.removeItem("persist:root")
-    // }
+    const removeData = async() => {
+        await AsyncStorage.removeItem("persist:root")
+    }
 
     return (
         <View>
